@@ -102,7 +102,19 @@ class MyDB {
    * @returns {Array<Ticket>}
    */
   draw(winnerCount) {
-    // 50 min--
+    let winnerindexes = new Array(winnerCount);
+    let index = 0;
+
+    while (index < winnerCount) {
+      let winnerIndex = Math.floor(Math.random() * this.tickets.length);
+      if (!winnerindexes.includes(winnerIndex)) {
+        winnerindexes[index++] = winnerIndex;
+        continue;
+      }
+    }
+
+    const winners = winnerindexes.map((index) => this.tickets[index]);
+    return winners;
   }
 }
 
