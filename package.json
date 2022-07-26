@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./poll-site/app.js"
+    "start": "nodemon ./lesson2/server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
@@ -13,6 +13,7 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "mongoose": "^6.4.6",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "shortid": "^2.2.16"
   }
 }
